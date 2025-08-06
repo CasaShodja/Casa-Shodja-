@@ -1,45 +1,101 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fffaf4;
-  color: #3e3e3e;
-  margin: 0;
-  padding: 0;
-}
-header {
-  background-color: #f8d5c2;
-  padding: 2rem;
-  text-align: center;
-}
-header h1 {
-  font-size: 2.8rem;
-  margin: 0;
-  color: #815d4d;
-}
-.intro, .features, .contact {
-  padding: 2rem;
-}
-.features {
-  background-color: #ffece0;
-}
-.features ul {
-  list-style: none;
-  padding: 0;
-}
-.features li {
-  padding: 0.5rem 0;
-}
-.contact {
-  background-color: #fef1ea;
-  text-align: center;
-}
-.contact a {
-  color: #af4c4c;
-  text-decoration: none;
-  font-weight: bold;
-}
-footer {
-  background-color: #f8d5c2;
-  padding: 1rem;
-  text-align: center;
-  font-size: 0.9rem;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Shodja</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function switchLanguage(lang) {
+        document.querySelectorAll("[data-lang]").forEach(el => {
+          el.style.display = el.getAttribute("data-lang") === lang ? "block" : "none";
+        });
+      }
+      window.onload = () => switchLanguage('en');
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>Casa Shodja</h1>
+      <p>Your serene Spanish getaway in Alicante 🌸</p>
+      <select onchange="switchLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
+    </header>
+
+    <section class="hero" data-lang="en">
+      <p>Welcome to Casa Shodja — a peaceful boho retreat nestled in the sun-drenched charm of Alicante, Spain. Whether you’re sipping morning coffee in the garden, cooling off in the sparkling pool, or enjoying a slow sunset BBQ, this is where memories are made.</p>
+    </section>
+    <section class="hero" data-lang="es">
+      <p>Bienvenido a Casa Shodja — un refugio bohemio y tranquilo ubicado en el encantador sol de Alicante, España. Ya sea disfrutando un café en el jardín, refrescándote en la piscina o saboreando una barbacoa al atardecer, aquí se crean recuerdos inolvidables.</p>
+    </section>
+
+    <section class="gallery">
+      <h2 data-lang="en">Gallery</h2>
+      <h2 data-lang="es">Galería</h2>
+      <div class="images">
+        <img src="photo1.jpg" alt="Casa Shodja Photo 1" />
+        <img src="photo2.jpg" alt="Casa Shodja Photo 2" />
+        <img src="photo3.jpg" alt="Casa Shodja Photo 3" />
+        <img src="photo4.jpg" alt="Casa Shodja Photo 4" />
+        <img src="photo5.jpg" alt="Casa Shodja Photo 5" />
+        <img src="photo6.jpg" alt="Casa Shodja Photo 6" />
+        <img src="photo7.jpg" alt="Casa Shodja Photo 7" />
+        <img src="photo8.jpg" alt="Casa Shodja Photo 8" />
+        <img src="photo9.jpg" alt="Casa Shodja Photo 9" />
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 data-lang="en">Features</h2>
+      <h2 data-lang="es">Características</h2>
+      <ul data-lang="en">
+        <li>🏖️ Sleeps 4 (plus sofa bed for 5th guest)</li>
+        <li>🌐 Free WiFi</li>
+        <li>❄️ Air conditioning</li>
+        <li>🍖 BBQ area</li>
+        <li>🌳 Private gardens</li>
+        <li>🏊‍♂️ Swimming pool</li>
+        <li>🍽️ Local restaurants nearby</li>
+        <li>🚕 10-minute taxi to the beach</li>
+      </ul>
+      <ul data-lang="es">
+        <li>🏖️ Capacidad para 4 (más sofá cama para un 5º huésped)</li>
+        <li>🌐 WiFi gratis</li>
+        <li>❄️ Aire acondicionado</li>
+        <li>🍖 Zona de barbacoa</li>
+        <li>🌳 Jardines privados</li>
+        <li>🏊‍♂️ Piscina</li>
+        <li>🍽️ Restaurantes locales cercanos</li>
+        <li>🚕 A 10 minutos en taxi de la playa</li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h2 data-lang="en">Book Your Stay</h2>
+      <h2 data-lang="es">Reserva Tu Estancia</h2>
+      <p data-lang="en">
+        📧 Email us at <a href="mailto:Casa.Shodja@gmail.com">Casa.Shodja@gmail.com</a><br />
+        💬 WhatsApp: <a href="https://wa.me/447541908410">+44 7541 908410</a>
+      </p>
+      <p data-lang="es">
+        📧 Escríbenos a <a href="mailto:Casa.Shodja@gmail.com">Casa.Shodja@gmail.com</a><br />
+        💬 WhatsApp: <a href="https://wa.me/447541908410">+44 7541 908410</a>
+      </p>
+    </section>
+
+    <section class="map">
+      <h2 data-lang="en">Find Us</h2>
+      <h2 data-lang="es">Dónde Estamos</h2>
+      <iframe
+        src="https://www.google.com/maps?q=Av.+Antonio+Quesada,+12,+03170+Cdad.+Quesada,+Alicante,+Spain&output=embed"
+        width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen loading="lazy">
+      </iframe>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Casa Shodja. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
