@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casa Shodja</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Casa Shodja</h1>
+      <p>Your serene Spanish getaway in Alicante 🌸</p>
+    </header>
+    <section class="intro">
+      <p>
+        Nestled in beautiful Alicante, Casa Shodja is a peaceful boho-style holiday home
+        ideal for families and couples. Relax by the pool, enjoy a BBQ in the private
+        gardens, or take a 10-minute taxi to the beach.
+      </p>
+    </section>
+    <section class="features">
+      <h2>Features</h2>
+      <ul>
+        <li>🏖️ Sleeps 4 comfortably, with space for a 5th guest on the sofa</li>
+        <li>🌐 Free WiFi</li>
+        <li>❄️ Air conditioning</li>
+        <li>🍖 BBQ facilities</li>
+        <li>🌳 Private gardens</li>
+        <li>🏊‍♂️ Swimming pool</li>
+        <li>🍽️ Local restaurants nearby</li>
+        <li>🚕 10-minute taxi ride to the beach</li>
+      </ul>
+    </section>
+    <section class="contact">
+      <h2>Book Your Stay</h2>
+      <p>
+        For availability and booking, email:
+        <a href="mailto:casashodja@example.com">casashodja@example.com</a><br />
+        WhatsApp: <a href="https://wa.me/34123456789">+34 123 456 789</a>
+      </p>
+    </section>
+    <footer>
+      <p>&copy; 2025 Casa Shodja. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
